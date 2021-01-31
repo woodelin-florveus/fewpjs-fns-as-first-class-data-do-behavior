@@ -11,3 +11,51 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
+
+// function greet(str){
+//   if(str === 12 ){
+//     return "Good Morning";
+//   } elsif (str === 12){
+//     return "Good afternoon";
+//   } elsif (str === )
+// };
+
+
+  
+
+function greet(str) {
+  const hour = parseInt(str)
+
+    if (hour < 12) {
+      return "Good Morning"
+    } else if (hour < 18) {
+      return "Good Afternoon"
+    } else {
+      return "Good Evening"
+    }
+}
+
+// function greet(str) {
+//   let today = new Date()
+//   let currentHr = today.getHours()
+
+//   if (currentHr < 12){
+//     return "Good Morning"
+//   } else if (currentHr < 18) {
+//     return "Good Afternoon"
+//   } else {
+//     return "Good Evening"
+//   }
+// }
+
+
+// function displayMessage(str) {
+//   let fieldElement = document.getElementById("greeting");
+//   if(fieldElement){
+//     fieldElement.innerHTML = str
+//   }
+// }
+
+function displayMessage(str) {
+ document.getElementById("greeting").innerText = str;
+}
